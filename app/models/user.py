@@ -1,8 +1,8 @@
-from app.baskend.db import Base, engine
+from app.baskend.db import Base
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.orm import relationship
 from sqlalchemy.schema import CreateTable
-from app.models import *
+# from app.models import *
 
 
 class User(Base):
@@ -21,4 +21,4 @@ class User(Base):
 
 
 
-# print(CreateTable(User.__tablename__))
+# print(CreateTable(User.__table__))
